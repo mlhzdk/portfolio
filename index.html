@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mel Mendoza — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
+  <body>
+    <nav id="nav">
+      <div class="nav-logo">
+        MELCHZEDEK P. MENDOZA<span style="color: var(--accent)">.</span>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="hero-eyebrow">
+        <span>Visual Design &amp; Illustration</span>
+        <span class="school"
+          >Polytechnic University of the Philippines<br />Institute of
+          Technology</span
+        >
+      </div>
+
+      <div class="name-stack">
+        <div class="name-line">
+          <span>MEL</span>
+          <span class="badge-year">'26</span>
+        </div>
+        <div class="hero-row3">
+          <div class="name-line outline-line">
+            <span class="outline">MENDOZA</span>
+          </div>
+          <div class="photo-slot">
+            <img src="images/image2.jpg" alt="Mel Mendoza" />
+          </div>
+        </div>
+        <div class="name-line">
+          <span>PORTFOLIO</span>
+        </div>
+      </div>
+
+      <div class="hero-footer">
+        <p class="hero-tagline">
+          A collection of design, illustration and visual experiments — made
+          between coffee, deadlines and the occasional good idea.
+        </p>
+        <a class="hero-email mono" href="mailto:mel.mendozzza@gmail.com"
+          >mel.mendozzza@gmail.com ↗</a
+        >
+        <div class="scroll-cue"><span class="dot"></span>SCROLL</div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about">
+      <div class="sec-head reveal">
+        <span class="sec-num mono">01</span>
+        <h2 class="sec-title">About</h2>
+        <div class="sec-rule"></div>
+      </div>
+      <div class="about-grid">
+        <p class="about-statement reveal">
+          I'm a design student who likes turning
+          <span class="hl">messy ideas</span> into things people actually want
+          to look at — branding, illustration, editorial layouts and the
+          occasional interactive experiment. Currently exploring how
+          <span class="hl">bold type</span> and playful systems can carry a
+          story.
+        </p>
+        <div class="about-side reveal">
+          <div class="about-block">
+            <h4>Tools</h4>
+            <div class="chip-row">
+              <span class="chip">Illustrator</span>
+              <span class="chip">Photoshop</span>
+              <span class="chip">Figma</span>
+              <span class="chip">Procreate</span>
+              <span class="chip">After Effects</span>
+            </div>
+          </div>
+          <div class="about-block">
+            <h4>Focus</h4>
+            <div class="chip-row">
+              <span class="chip">Branding</span>
+              <span class="chip">Illustration</span>
+              <span class="chip">Editorial</span>
+              <span class="chip">UI / UX</span>
+            </div>
+          </div>
+          <p class="about-p">
+            Based in Lemery, Batangas — open to internships, freelance projects and
+            collaborations. Reach out any time.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WORK ================= -->
+    <section class="section section-tight" id="work">
+      <div class="sec-head reveal">
+        <span class="sec-num mono">02</span>
+        <h2 class="sec-title">Work</h2>
+        <div class="sec-rule"></div>
+      </div>
+
+      <div class="filter-row reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="branding">Branding</button>
+        <button class="filter-btn" data-filter="illustration">
+          Illustration
+        </button>
+        <button class="filter-btn" data-filter="editorial">Editorial</button>
+        <button class="filter-btn" data-filter="ui">UI / UX</button>
+      </div>
+
+      <div class="masonry reveal" id="masonry"></div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section contact" id="contact">
+      <div class="sec-head reveal">
+        <span class="sec-num mono">03</span>
+        <h2 class="sec-title">Contact</h2>
+        <div class="sec-rule"></div>
+      </div>
+      <h3 class="contact-big reveal">
+        Let's make <span class="outline">something</span> good.
+      </h3>
+      <div class="contact-row reveal">
+        <a class="contact-email" href="mailto:mel.mendozzza@gmail.com"
+          >mel.mendozzza@gmail.com</a
+        >
+        <div class="social-list">
+          <a href="https://www.instagram.com/mlhzdk_/">Instagram</a>
+          <a href="https://www.facebook.com/mlhzdk/">Facebook</a>
+          <a href="https://www.linkedin.com/in/mlhzdk/">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>© 2026 Melchzedek P. Mendoza</span>
+      <span>Made with type &amp; a little chaos</span>
+    </footer>
+
+    <script>
+      /* =========================================================
+   CONFIG — edit this to make the page yours
+   ========================================================= */
+      const CONFIG = {
+        projects: [
+          { title: "Citrus Zine", cat: "editorial", h: 340 },
+          { title: "Nomad Type", cat: "branding", h: 260 },
+          { title: "Field Notes", cat: "illustration", h: 420 },
+          { title: "Loop App UI", cat: "ui", h: 300 },
+          { title: "Paper Trail", cat: "editorial", h: 230 },
+          { title: "Kiln Ceramics", cat: "branding", h: 380 },
+          { title: "Static Bloom", cat: "illustration", h: 270 },
+          { title: "Grid & Grain", cat: "ui", h: 340 },
+          { title: "Weekend Market", cat: "branding", h: 220 },
+          { title: "Soft Riot", cat: "illustration", h: 360 },
+          { title: "Dispatch 04", cat: "editorial", h: 300 },
+          { title: "Pocket Studio", cat: "ui", h: 250 },
+        ],
+      };
+
+      /* ---------------- build masonry ---------------- */
+      const masonry = document.getElementById("masonry");
+      CONFIG.projects.forEach((p, i) => {
+        const card = document.createElement("div");
+        card.className = "ph-card";
+        card.dataset.cat = p.cat;
+        card.innerHTML = `
+    <div class="ph-visual" style="height:${p.h}px">
+      <div class="plus"></div>
+      <span>Add image</span>
+    </div>
+    <div class="ph-meta">
+      <span class="t">${p.title}</span>
+      <span class="c mono">${String(i + 1).padStart(2, "0")} — ${p.cat}</span>
+    </div>`;
+        masonry.appendChild(card);
+      });
+
+      /* ---------------- filter ---------------- */
+      document.querySelectorAll(".filter-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          document
+            .querySelectorAll(".filter-btn")
+            .forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+          const f = btn.dataset.filter;
+          document.querySelectorAll(".ph-card").forEach((card) => {
+            card.classList.toggle(
+              "hide",
+              f !== "all" && card.dataset.cat !== f,
+            );
+          });
+        });
+      });
+
+      /* ---------------- nav scroll state + mobile toggle ---------------- */
+      const nav = document.getElementById("nav");
+      window.addEventListener("scroll", () => {
+        nav.classList.toggle("scrolled", window.scrollY > 40);
+      });
+      const navToggle = document.getElementById("navToggle");
+      const navLinks = document.getElementById("navLinks");
+      navToggle.addEventListener("click", () =>
+        navLinks.classList.toggle("open"),
+      );
+      navLinks
+        .querySelectorAll("a")
+        .forEach((a) =>
+          a.addEventListener("click", () => navLinks.classList.remove("open")),
+        );
+
+      /* ---------------- reveal on scroll ---------------- */
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("in");
+              io.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.15 },
+      );
+      document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
+    </script>
+  </body>
+</html>
